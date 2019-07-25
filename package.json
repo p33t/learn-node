@@ -1,0 +1,19 @@
+{
+  "name": "pwl-learn-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "C:/Users/10200825/OneDrive - Eastman Kodak Company/repo/git/pwl-learn-node/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
