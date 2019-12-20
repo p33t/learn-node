@@ -2,7 +2,7 @@
   "name": "pwl-learn-node",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "command-line/index.js",
   "scripts": {
     "test": "jest",
     "exceptions": "node exceptions"
@@ -16,5 +16,12 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^24.8.0"
+  },
+  "bin": {
+    "learn-command-line": "./command-line/index.js"
+  },
+  "dependencies": {
+    "arg": "^4.1.2",
+    "minimist": "^1.2.0"
   }
 }
