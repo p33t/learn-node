@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05208fdd-4569-491d-be5b-08d2cff5b899" name="Default Changelist" comment="Added 'exceptions' script to examine exception handling">
-      <change afterPath="$PROJECT_DIR$/command-line/READ_ME.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/command-line/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    <list default="true" id="05208fdd-4569-491d-be5b-08d2cff5b899" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/invoke-exe/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <list id="fdca6e15-ec66-451c-affe-39e7c8f72c15" name="IDE" comment="" />
@@ -107,13 +104,14 @@
     <MESSAGE value="Add 'jest' for testing." />
     <MESSAGE value="Using a 'describe' block." />
     <MESSAGE value="Added 'exceptions' script to examine exception handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 'exceptions' script to examine exception handling" />
+    <MESSAGE value="Command line experiments (incl. basic arg parsing)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Command line experiments (incl. basic arg parsing)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1217" y="141" key="CommitChangelistDialog2" timestamp="1576796672864">
+    <state x="1217" y="141" key="CommitChangelistDialog2" timestamp="1576800052302">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1217" y="141" key="CommitChangelistDialog2/0.0.3440.1400@0.0.3440.1400" timestamp="1576796672864" />
+    <state x="1217" y="141" key="CommitChangelistDialog2/0.0.3440.1400@0.0.3440.1400" timestamp="1576800052302" />
     <state x="1541" y="571" key="VCS.ChangelistChooser" timestamp="1576796626016">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>

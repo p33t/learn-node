@@ -5,7 +5,8 @@
   "main": "command-line/index.js",
   "scripts": {
     "test": "jest",
-    "exceptions": "node exceptions"
+    "exceptions": "node exceptions",
+    "invoke-exe": "node invoke-exe"
   },
   "repository": {
     "type": "git",
