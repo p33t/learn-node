@@ -22,7 +22,6 @@
     "learn-command-line": "./command-line/index.js"
   },
   "dependencies": {
-    "arg": "^4.1.2",
     "minimist": "^1.2.0"
   }
 }

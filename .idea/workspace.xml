@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05208fdd-4569-491d-be5b-08d2cff5b899" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/invoke-exe/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest-learn/sum.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest-learn/sum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest-learn/sum.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/jest-learn/sum.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pwl-learn-node.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pwl-learn-node.iml" afterDir="false" />
     </list>
     <list id="fdca6e15-ec66-451c-affe-39e7c8f72c15" name="IDE" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,24 +48,38 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/exceptions" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\10200825\work\pwl-learn-node\exceptions" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Jest.All Tests">
+    <configuration name="All Tests" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="NodeJSConfigurationType" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="exceptions.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/exceptions/exceptions.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Jest.All Tests" />
+      <item itemvalue="Node.js.exceptions.js" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.exceptions.js" />
@@ -105,16 +122,53 @@
     <MESSAGE value="Using a 'describe' block." />
     <MESSAGE value="Added 'exceptions' script to examine exception handling" />
     <MESSAGE value="Command line experiments (incl. basic arg parsing)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Command line experiments (incl. basic arg parsing)" />
+    <MESSAGE value="Invoking command line" />
+    <option name="LAST_COMMIT_MESSAGE" value="Invoking command line" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1217" y="141" key="CommitChangelistDialog2" timestamp="1576800052302">
+    <state x="734" y="316" width="1092" height="841" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577214995495">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="734" y="316" width="1092" height="841" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1577214995495" />
+    <state x="1217" y="141" key="CommitChangelistDialog2" timestamp="1576801728585">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="1217" y="141" key="CommitChangelistDialog2/0.0.3440.1400@0.0.3440.1400" timestamp="1576800052302" />
+    <state x="1217" y="141" key="CommitChangelistDialog2/0.0.3440.1400@0.0.3440.1400" timestamp="1576801728585" />
+    <state x="1400" y="281" key="FileChooserDialogImpl" timestamp="1576802937520">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1400" y="281" key="FileChooserDialogImpl/0.0.3440.1400@0.0.3440.1400" timestamp="1576802937520" />
+    <state width="2527" height="360" key="GridCell.Tab.0.bottom" timestamp="1577215542653">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2527" height="360" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1577215542653" />
+    <state width="2527" height="360" key="GridCell.Tab.0.center" timestamp="1577215542653">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2527" height="360" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1577215542653" />
+    <state width="2527" height="360" key="GridCell.Tab.0.left" timestamp="1577215542653">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2527" height="360" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1577215542653" />
+    <state width="2527" height="360" key="GridCell.Tab.0.right" timestamp="1577215542653">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2527" height="360" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1577215542653" />
+    <state x="1234" y="243" key="NewModule_or_Project.wizard" timestamp="1576802946761">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1234" y="243" key="NewModule_or_Project.wizard/0.0.3440.1400@0.0.3440.1400" timestamp="1576802946761" />
+    <state x="541" y="157" key="SettingsEditor" timestamp="1577214772129">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="541" y="157" key="SettingsEditor/0.0.2560.1400/-1920.0.1920.1160@0.0.2560.1400" timestamp="1577214772129" />
     <state x="1541" y="571" key="VCS.ChangelistChooser" timestamp="1576796626016">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1541" y="571" key="VCS.ChangelistChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1576796626016" />
+    <state x="1112" y="289" key="Vcs.Push.Dialog.v2" timestamp="1576801741037">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="1112" y="289" key="Vcs.Push.Dialog.v2/0.0.3440.1400@0.0.3440.1400" timestamp="1576801741037" />
   </component>
 </project>
