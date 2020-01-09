@@ -48,28 +48,64 @@ describe('asynchronous recursion', () => {
         f2: "f2",
     };
 
-    test('async 1 level', () =>{
+    test('async 1 level', () => {
         expect.assertions(1);
         return expect(subject.pathsAsync(obj.f1.f12))
             .resolves.toEqual(expect.arrayContaining([['f121']]));
     });
 
-    test('async 2 level', () =>{
+    test('async 2 level', () => {
         expect.assertions(1);
         return expect(subject.pathsAsync(obj.f1))
             .resolves.toEqual(expect.arrayContaining([['f11'], ['f12', 'f121']]));
     });
 
-    test('async 3 level', () =>{
+    test('async 3 level', () => {
         expect.assertions(1);
         return expect(subject.pathsAsync(obj))
             .resolves.toEqual(expect.arrayContaining([['f1', 'f11'], ['f1', 'f12', 'f121'], ['f2']]));
     });
 
-    test('promise 3 level', () =>{
+    test('promise 3 level', () => {
         expect.assertions(1);
         return expect(subject.pathsPromise(obj))
             .resolves.toEqual(expect.arrayContaining([['f1', 'f11'], ['f1', 'f12', 'f121'], ['f2']]));
     });
+});
 
+describe('asynchronous errors', () => {
+    const obj = {
+        f1: {
+            f11: "f11",
+            f12: {
+                f121: "f121",
+                f122: "bad",
+            },
+        },
+        f2: "f2",
+    };
+
+    test('async 1 level', () => {
+        expect.assertions(1);
+        return expect(subject.pathsAsync(obj.f1.f12))
+            .rejects.toThrowError('Bad path: f122');
+    });
+
+    test('async 2 level', () => {
+        expect.assertions(1);
+        return expect(subject.pathsAsync(obj.f1))
+            .rejects.toThrowError('Bad path: f12/f122');
+    });
+
+    test('async 3 level', () => {
+        expect.assertions(1);
+        return expect(subject.pathsAsync(obj))
+            .rejects.toThrowError('Bad path: f1/f12/f122');
+    });
+
+    test('promise 3 level', () => {
+        expect.assertions(1);
+        return expect(subject.pathsPromise(obj))
+            .rejects.toThrowError('Bad path: f1/f12/f122');
+    });
 });
