@@ -1,11 +1,7 @@
 'use strict';
 
 function listPropsAsync(obj) {
-    const props = [];
-    for (const prop in obj) {
-        if (obj.hasOwnProperty(prop)) props.push(prop);
-    }
-    return Promise.resolve(props);
+    return Promise.resolve(Object.keys(obj));
 }
 
 /**
