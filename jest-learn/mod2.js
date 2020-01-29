@@ -8,7 +8,7 @@ function konnichiwa(name) {
 }
 
 async function konnichiwaAsync(name) {
-    return konnichiwa(name);
+    return mod1.helloAsync(name);
 }
 
 module.exports = {
