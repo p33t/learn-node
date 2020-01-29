@@ -11,7 +11,12 @@ async function konnichiwaAsync(name) {
     return mod1.helloAsync(name);
 }
 
+function constValue() {
+    return mod1.CONST_VALUE;
+}
+
 module.exports = {
     konnichiwa,
     konnichiwaAsync,
+    constValue,
 };

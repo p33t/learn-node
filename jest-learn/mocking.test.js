@@ -21,6 +21,11 @@ describe('Shallow mock', () => {
             expect(mod1.hello).toHaveBeenCalledWith('bruce');
         });
     });
+
+    test('constant value', () => {
+        mod1.CONST_VALUE = 'random';
+        expect(mod1.CONST_VALUE).toBe('random');
+    });
 });
 
 describe('Deep mock', () => {
@@ -39,5 +44,10 @@ describe('Deep mock', () => {
             expect(resp).toBe('mock response');
             expect(mod1.hello).toHaveBeenCalledWith('brucesan');
         });
+    });
+
+    test('constant value', () => {
+        mod1.CONST_VALUE = 'randomX';
+        expect(mod2.constValue()).toBe('randomX');
     });
 });
