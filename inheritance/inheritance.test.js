@@ -10,3 +10,23 @@ describe('Confirm basic', () => {
         expect(sub.f2).toBe('sub');
     });
 });
+
+// See class-deserialize for turning a vanilla object into a class instance.
+// class ClassWithMethods {
+//     constructor(f1) {
+//         this.f1 = f1;
+//         this.reverseF1();
+//     }
+//
+//     reverseF1() {
+//         this.f1 = [...this.f1].reverse().join('');
+//     }
+// }
+//
+// describe('constructor', () => {
+//     test('can invoke constructor from variable', () => {
+//         const ctor = SubClass.constructor;
+//         const sub = ctor('a', 'b');
+//         //NOPE: expect(sub.f2).toBe('b');
+//     });
+// });
