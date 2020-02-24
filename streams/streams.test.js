@@ -2,9 +2,11 @@
 const path = require('path');
 const fs = require('fs');
 const readline = require('readline');
+// const writeline = require('writeline');
+// const {Writable} = require('streams');
 const someFile = path.resolve(__dirname, 'some-file.txt');
 
-describe('basics', () => {
+describe('reading', () => {
     test('pre-conditions', () => {
         const content = fs.readFileSync(someFile, {encoding: 'utf-8'});
         expect(content).toBe(`this is a file\r
@@ -47,5 +49,25 @@ with some text\r
         return expect(readAll(boxed()))
             .resolves.toEqual(['[this is a file]', '[with some text]']);
 
+    });
+});
+
+describe('writing', () =>{
+    test('basics', async () => {
+        const file = path.resolve(__dirname, 'output.txt');
+        if (fs.existsSync(file)) fs.unlinkSync(file);
+        const out = fs.createWriteStream(file, {encoding: 'utf-8'});
+        out.write('line 1\n');
+        out.write('line 2\n');
+        out.write('line 3\n');
+        const outEnded = new Promise(function(resolve) {
+            out.end(() => {
+                resolve();
+            });
+        });
+        await outEnded;
+        const actual = fs.readFileSync(file, {encoding: 'utf-8'});
+        expect(actual).toBe('line 1\nline 2\nline 3\n');
+        fs.unlinkSync(file);
     });
 });
