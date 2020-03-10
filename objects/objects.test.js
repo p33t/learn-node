@@ -1,4 +1,6 @@
 const {create} = require('.');
+const Base = require('./Base');
+const Sub = require('./Sub');
 
 describe("My Dynamic", () => {
     const subject = create();
@@ -14,5 +16,14 @@ describe("My Dynamic", () => {
     });
     test('f4() works', () => {
         expect(subject.f4()).toBe("Created at " + subject.createdAt);
+    });
+});
+
+describe("Polymorphism", () => {
+    test('someMethod()', () => {
+        const objs = [new Base(), new Sub()];
+
+        const results = objs.map(o => o.someMethod());
+        expect(results).toEqual(['Base', 'Sub']);
     });
 });
