@@ -26,4 +26,10 @@ describe("Polymorphism", () => {
         const results = objs.map(o => o.someMethod());
         expect(results).toEqual(['Base', 'Sub']);
     });
+    test('baseMethod()', () => {
+        const objs = [new Base(), new Sub()];
+
+        const results = objs.map(o => o.baseMethod());
+        expect(results).toEqual(['Base', 'Sub']);
+    });
 });
