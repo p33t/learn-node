@@ -7,9 +7,9 @@ describe('promise basics', () => {
         expect(await subject.manualPromise("hello")).toBe('hello');
     });
 
-    test('manualPromise', () => {
+    test('manualPromise', async () => {
         expect.assertions(1);
-        return expect(subject.manualPromise("hello")).resolves.toBe('hello');
+        await expect(subject.manualPromise("hello")).resolves.toBe('hello');
     });
 });
 
