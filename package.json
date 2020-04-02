@@ -16,12 +16,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.9.0"
   },
   "bin": {
     "learn-command-line": "./command-line/index.js"
   },
   "dependencies": {
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.5"
   }
 }
