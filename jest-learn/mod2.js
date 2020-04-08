@@ -8,7 +8,7 @@ function konnichiwa(name) {
 }
 
 async function konnichiwaAsync(name) {
-    return mod1.helloAsync(name);
+    return mod1.helloAsync(name + "san");
 }
 
 function constValue() {

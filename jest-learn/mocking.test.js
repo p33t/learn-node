@@ -12,6 +12,11 @@ describe('Shallow mock', () => {
         expect(mod1.hello).toHaveBeenCalledWith('bruce');
     });
 
+    test('implementation', () => {
+        mod1.hello.mockImplementation((name) => `mock ${name}`);
+        expect(mod1.hello('bruce')).toBe('mock bruce');
+    });
+
     test('resolve value', () => {
         mod1.helloAsync.mockResolvedValue('mock response')
             .mockName('shallow mock resolve test');
@@ -20,6 +25,11 @@ describe('Shallow mock', () => {
             expect(resp).toBe('mock response');
             expect(mod1.hello).toHaveBeenCalledWith('bruce');
         });
+    });
+
+    test('implementation async', async () => {
+        mod1.helloAsync.mockImplementation(async (name) => `async mock ${name}`);
+        expect(await mod1.helloAsync('bruce')).toBe('async mock bruce');
     });
 
     test('constant value', () => {
@@ -36,6 +46,11 @@ describe('Deep mock', () => {
         expect(mod1.hello).toHaveBeenCalledWith('brucesan');
     });
 
+    test('implementation', () => {
+        mod1.hello.mockImplementation((name) => `mock ${name}`);
+        expect(mod2.konnichiwa('bruce')).toBe('mock brucesan');
+    });
+
     test('resolve value', () => {
         mod1.helloAsync.mockResolvedValue('mock response')
             .mockName('deep mock resolve test');
@@ -44,6 +59,11 @@ describe('Deep mock', () => {
             expect(resp).toBe('mock response');
             expect(mod1.hello).toHaveBeenCalledWith('brucesan');
         });
+    });
+
+    test('implementation async', async () => {
+        mod1.helloAsync.mockImplementation(async (name) => `async mock ${name}`);
+        expect(await mod2.konnichiwaAsync('bruce')).toBe('async mock brucesan');
     });
 
     test('constant value', () => {
